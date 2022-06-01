@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Preloader page
+        </title>
+        <style>
+            #preloader{
+    position: fixed;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+#preloader.hide-preloader {
+    animation: hidePreloader 5s;
+}
+
+#preloader.preloader-hidden {
+    display: none;
+}
+
+@keyframes hidePreloader {
+    0% {
+        opacity: 1;
+    }
+    
+    100% {
+        opacity: 0;
+       
+    }
+}
+        </style>
+        <script src="scripts/preloader.js"></script> 
+    </head>
+    <body> 
+        <div id='preloader'>
+            <img src="images/preloader.gif" alt="preloader">
+        </div>
+        <h1> Тут контент</h1>
+    </body>
+</html>
